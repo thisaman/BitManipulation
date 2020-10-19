@@ -1,0 +1,21 @@
+// C++ program to Count set bits in an integer using Brian Kerningam's Algorithm
+#include <bits/stdc++.h> 
+using namespace std; 
+
+unsigned int countSetBits(int num) 
+{ 
+       unsigned int count = 0; 
+       while (num) { 
+          num &= (num - 1); 
+          count++; 
+       } 
+      return count; 
+} 
+
+// testing function countSetBits 
+int main() 
+{ 
+	int i = 29; 
+	cout << countSetBits(i); 
+	return 0; 
+} 
