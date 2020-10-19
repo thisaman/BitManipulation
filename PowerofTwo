@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+bool isPowerOFTwo(int n)
+{
+    if(n == 0)
+        return true;
+    
+    return ((n & (n - 1)) == 0);
+}
+    
+int main() {
+	
+	int n = 64;
+	
+	printf("%s", isPowerOFTwo(n)? "true": "false");
+}
