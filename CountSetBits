@@ -16,6 +16,6 @@ unsigned int countSetBits(int num)
 int main() 
 { 
 	int i = 29; 
-	cout << countSetBits(i); 
+	cout << countSetBits(i); //This line will print 4 as number of set bits in 29 are 4.
 	return 0; 
 } 
