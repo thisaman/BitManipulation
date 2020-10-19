@@ -1,0 +1,23 @@
+// naive solution to Count set bits in an integer in c++  
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// function for counting no of set bits in binary representation of positive integer n 
+unsigned int countSetBits(unsigned int n) 
+{ 
+	unsigned int count = 0; 
+	while (n != 0) {
+	    if (n % 2 != 0)
+	       count++;
+	    n = n/2;      
+	} 
+	return count; 
+} 
+
+/* Testing our function inside main() */
+int main() 
+{ 
+	int i = 29; 
+	cout << countSetBits(i); //will print 4 as the outputs, as 29 has 4 set bits in its binary representation
+	return 0; 
+} 
